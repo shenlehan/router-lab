@@ -4,6 +4,7 @@
 #include "common.h"
 #include <netinet/in.h>
 #include <stdint.h>
+#include <vector>
 
 /*
   表示路由表的一项。
@@ -37,6 +38,8 @@ typedef struct {
   // additional fields need to be added here in the router homework to store the
   // metric
 } RoutingTableEntry;
+
+extern std::vector<RoutingTableEntry> RoutingTable;
 
 /**
  * @brief 插入/删除一条路由表表项
